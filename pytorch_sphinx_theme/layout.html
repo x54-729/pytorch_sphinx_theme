@@ -77,6 +77,9 @@
 
   {%- block extrahead %}
   <!-- Google Analytics -->
+  <script type="text/javascript">
+    var collapsedSections = [];
+  </script>
   {% if theme_analytics_id %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ theme_analytics_id }}"></script>
     <script>
