@@ -820,10 +820,10 @@
 }
 
 .resources-dropdown {
-  .with-down-orange-arrow {
+  .with-down-blue-arrow {
     padding-right: rem(32px);
     position: relative;
-    background: url("../images/chevron-down-orange.svg");
+    background: url("../images/chevron-down-blue.svg");
     background-size: 14px 18px;
     background-position: top 7px right 10px;
     background-repeat: no-repeat;
@@ -838,7 +838,7 @@
   background-position: top 7px right 10px;
   background-repeat: no-repeat;
   &:hover {
-    background-image: url("../images/chevron-down-orange.svg");
+    background-image: url("../images/chevron-down-blue.svg");
     background-repeat: no-repeat;
   }
 }
