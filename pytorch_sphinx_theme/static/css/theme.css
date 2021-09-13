@@ -91,6 +91,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.highlight > pre {
+  line-height: 1.325rem;
+}
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -223,10 +227,6 @@ caption {
   color: #6c757d;
   text-align: left;
   caption-side: bottom;
-}
-
-th {
-  text-align: inherit;
 }
 
 label {
@@ -9230,7 +9230,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .highlight .gp {
-  color: #555555;
+  color: #2980b9;
 }
 
 .highlight .gs {
@@ -9398,7 +9398,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .highlight .nn {
-  color: #555555;
+  color: #2980b9;
 }
 
 .highlight .nt {
@@ -9549,13 +9549,13 @@ a:link,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #e44c2c;
+  color: #2980b9;
 }
 
 a.with-right-arrow, .btn.with-right-arrow {
   padding-right: 1.375rem;
   position: relative;
-  background-image: url("../images/chevron-right-orange.svg");
+  background-image: url("../images/chevron-right-blue.svg");
   background-size: 6px 13px;
   background-position: center right 5px;
   background-repeat: no-repeat;
@@ -9569,23 +9569,23 @@ a.with-right-arrow, .btn.with-right-arrow {
 }
 
 ::-webkit-input-placeholder {
-  color: #e44c2c;
+  color: #2980b9;
 }
 
 ::-moz-placeholder {
-  color: #e44c2c;
+  color: #2980b9;
 }
 
 :-ms-input-placeholder {
-  color: #e44c2c;
+  color: #2980b9;
 }
 
 :-moz-placeholder {
-  color: #e44c2c;
+  color: #2980b9;
 }
 
 .email-subscribe-form input.email {
-  color: #e44c2c;
+  color: #2980b9;
   border: none;
   border-bottom: 1px solid #939393;
   width: 100%;
@@ -9734,22 +9734,22 @@ pre {
 }
 
 .header-logo {
-  height: 23px;
-  width: 93px;
-  background-image: url("../images/logo.svg");
+  height: 30px;
+  width: 115px;
+  background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-  background-size: 93px 23px;
+  background-size: 115px 30px;
   display: block;
   float: left;
   z-index: 10;
 }
 @media screen and (min-width: 1100px) {
   .header-logo {
-    background-size: 108px 27px;
+    background-size: 154px 40px;
     position: absolute;
-    height: 27px;
-    width: 108px;
-    top: 4px;
+    height: 40px;
+    width: 154px;
+    top: -4px;
     float: none;
   }
 }
@@ -9804,7 +9804,7 @@ pre {
 .header-holder .main-menu ul li.active:after {
   content: "•";
   bottom: -24px;
-  color: #e44c2c;
+  color: #2980b9;
   font-size: 1.375rem;
   left: 0;
   position: absolute;
@@ -9812,12 +9812,12 @@ pre {
   text-align: center;
 }
 .header-holder .main-menu ul li.active a {
-  color: #e44c2c;
+  color: #2980b9;
 }
 .header-holder .main-menu ul li.docs-active:after {
   content: "•";
   bottom: -24px;
-  color: #e44c2c;
+  color: #2980b9;
   font-size: 1.375rem;
   left: -24px;
   position: absolute;
@@ -9837,7 +9837,7 @@ pre {
 }
 @media screen and (min-width: 1100px) {
   .header-holder .main-menu ul li a:hover {
-    color: #e44c2c;
+    color: #2980b9;
   }
 }
 
@@ -9892,7 +9892,7 @@ pre {
   text-decoration: none;
 }
 .mobile-main-menu.open ul li.active a {
-  color: #e44c2c;
+  color: #2980b9;
 }
 
 .main-menu-close-button {
@@ -9971,7 +9971,7 @@ pre {
 }
 @media screen and (min-width: 768px) {
   .site-footer a:hover {
-    color: #e44c2c;
+    color: #2980b9;
   }
 }
 
@@ -10033,7 +10033,7 @@ pre {
 }
 .docs-tutorials-resources a {
   font-size: 1.125rem;
-  color: #e44c2c;
+  color: #2980b9;
 }
 .docs-tutorials-resources a:hover {
   color: #ffffff;
@@ -10190,7 +10190,7 @@ article.pytorch-article blockquote {
   font-weight: 500;
 }
 article.pytorch-article table {
-  margin-bottom: 2.5rem;
+  /* margin-bottom: 2.5rem; */
   width: 100%;
 }
 article.pytorch-article table thead {
@@ -10279,7 +10279,7 @@ p {
 p a:link,
 p a:visited,
 p a:hover {
-  color: #e44c2c;
+  color: #2980b9;
   text-decoration: none;
 }
 @media screen and (min-width: 768px) {
@@ -10290,11 +10290,11 @@ p a:hover {
 p a:link,
 p a:visited,
 p a:hover {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 .wy-breadcrumbs li a {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 ul.pytorch-breadcrumbs {
@@ -10306,7 +10306,7 @@ ul.pytorch-breadcrumbs li {
   font-size: 0.875rem;
 }
 ul.pytorch-breadcrumbs a {
-  color: #ee4c2c;
+  color: #2980b9;
   text-decoration: none;
 }
 
@@ -10341,9 +10341,6 @@ ul.pytorch-breadcrumbs a {
   top: 0;
 }
 
-.tutorials-header .header-logo {
-  background-image: url("../images/logo-dark.svg");
-}
 .tutorials-header .main-menu ul li a {
   color: #262626;
 }
@@ -10370,11 +10367,11 @@ ul.pytorch-breadcrumbs a {
   display: none;
 }
 .rst-content footer .rating-container .rating-prompt.yes-link, .rst-content footer .rating-container .rating-prompt.no-link {
-  color: #e44c2c;
+  color: #2980b9;
   cursor: pointer;
 }
 .rst-content footer .rating-container .rating-prompt.yes-link:hover, .rst-content footer .rating-container .rating-prompt.no-link:hover {
-  background-color: #e44c2c;
+  background-color: #2980b9;
   color: #ffffff;
 }
 .rst-content footer .rating-container .stars-outer {
@@ -10387,7 +10384,7 @@ ul.pytorch-breadcrumbs a {
   cursor: pointer;
 }
 .rst-content footer .rating-container .stars-outer .star-fill {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 .rst-content footer div[role="contentinfo"] {
   padding-top: 2.5rem;
@@ -10547,7 +10544,7 @@ article.pytorch-article .sphx-glr-thumbcontainer .figure a.reference.internal {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #e44c2c;
+    background-color: #2980b9;
     -webkit-transition: width .250s ease-in-out;
     transition: width .250s ease-in-out;
   }
@@ -10557,7 +10554,7 @@ article.pytorch-article .sphx-glr-thumbcontainer .figure a.reference.internal {
 }
 @media screen and (min-width: 768px) {
   article.pytorch-article .sphx-glr-thumbcontainer:after {
-    background-color: #ee4c2c;
+    background-color: #2980b9;
   }
 }
 
@@ -10578,7 +10575,7 @@ article.pytorch-article .function dt, article.pytorch-article .attribute dt, art
   position: relative;
   background: #f3f4f7;
   padding: 0.5rem;
-  border-left: 3px solid #ee4c2c;
+  border-left: 3px solid #2980b9;
   word-wrap: break-word;
   padding-right: 100px;
 }
@@ -10597,7 +10594,7 @@ article.pytorch-article .function dt a, article.pytorch-article .attribute dt a,
           transform: perspective(1px) translateY(-50%);
 }
 article.pytorch-article .function dt:hover .viewcode-link, article.pytorch-article .attribute dt:hover .viewcode-link, article.pytorch-article .class dt:hover .viewcode-link {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 article.pytorch-article .function .anchorjs-link, article.pytorch-article .attribute .anchorjs-link, article.pytorch-article .class .anchorjs-link {
   display: inline;
@@ -10672,7 +10669,7 @@ article.pytorch-article .attribute .has-code {
 }
 article.pytorch-article .class dt {
   border-left: none;
-  border-top: 3px solid #ee4c2c;
+  border-top: 3px solid #2980b9;
   padding-left: 4em;
 }
 article.pytorch-article .class dt em.property {
@@ -10685,7 +10682,7 @@ article.pytorch-article .class dd .docutils dt {
 article.pytorch-article .class em.property {
   text-transform: uppercase;
   font-style: normal;
-  color: #ee4c2c;
+  color: #2980b9;
   font-size: 1rem;
   letter-spacing: 0;
   padding-right: 0.75rem;
@@ -10697,7 +10694,7 @@ article.pytorch-article .class dl dt em.property {
 }
 article.pytorch-article .class .method dt,
 article.pytorch-article .class .staticmethod dt {
-  border-left: 3px solid #ee4c2c;
+  border-left: 3px solid #2980b9;
   border-top: none;
 }
 article.pytorch-article .class .method dt,
@@ -10711,9 +10708,9 @@ article.pytorch-article .class .attribute dt em.property {
   position: relative;
   left: 0;
 }
-article.pytorch-article table {
+/* article.pytorch-article table {
   table-layout: fixed;
-}
+} */
 
 article.pytorch-article .note,
 article.pytorch-article .warning,
@@ -10933,14 +10930,14 @@ article.pytorch-article .sphx-glr-download-link-note.admonition.note,
 article.pytorch-article .reference.download.internal, article.pytorch-article .sphx-glr-signature {
   display: none;
 }
-article.pytorch-article .admonition > p:last-of-type {
+article.pytorch-article .admonition >:last-child {
   margin-bottom: 0;
   padding-bottom: 1.125rem !important;
 }
 
 .pytorch-article div.sphx-glr-download a {
   background-color: #f3f4f7;
-  background-image: url("../images/arrow-down-orange.svg");
+  background-image: url("../images/arrow-down-blue.svg");
   background-repeat: no-repeat;
   background-position: left 10px center;
   background-size: 15px 15px;
@@ -10961,7 +10958,7 @@ article.pytorch-article .admonition > p:last-of-type {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #e44c2c;
+    background-color: #2980b9;
     -webkit-transition: width .250s ease-in-out;
     transition: width .250s ease-in-out;
   }
@@ -10971,7 +10968,7 @@ article.pytorch-article .admonition > p:last-of-type {
 }
 @media screen and (min-width: 768px) {
   .pytorch-article div.sphx-glr-download a:after {
-    background-color: #ee4c2c;
+    background-color: #2980b9;
   }
 }
 @media screen and (min-width: 768px) {
@@ -10983,7 +10980,7 @@ article.pytorch-article .admonition > p:last-of-type {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-decoration: none;
-  background-image: url("../images/arrow-down-orange.svg");
+  background-image: url("../images/arrow-down-blue.svg");
   background-color: #f3f4f7;
 }
 .pytorch-article div.sphx-glr-download a span.pre {
@@ -11016,15 +11013,20 @@ article.pytorch-article .admonition > p:last-of-type {
   margin-top: unset;
 }
 
+article.pytorch-article .wy-table-responsive {
+  overflow: auto;
+  margin-bottom: 2.5rem;
+}
+
 article.pytorch-article .wy-table-responsive table {
   border: none;
-  border-color: #ffffff !important;
-  table-layout: fixed;
+  /* border-color: #ffffff !important; */
 }
 article.pytorch-article .wy-table-responsive table thead tr {
   border-bottom: 2px solid #6c6c6d;
 }
 article.pytorch-article .wy-table-responsive table thead th {
+  /* text-align: center; */
   line-height: 1.75rem;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -11038,10 +11040,11 @@ article.pytorch-article .wy-table-responsive table tbody td {
   padding: 0.9375rem;
   font-size: 1rem;
   line-height: 1.375rem;
+  border-bottom: #e4e4e4 1px solid;
 }
 article.pytorch-article .wy-table-responsive table tbody td .pre {
   background: #ffffff;
-  color: #ee4c2c;
+  color: #2980b9;
   font-size: 87.5%;
 }
 article.pytorch-article .wy-table-responsive table tbody td code {
@@ -11128,33 +11131,33 @@ article.pytorch-article .math img {
 a:link,
 a:visited,
 a:hover {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 ::-webkit-input-placeholder {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 ::-moz-placeholder {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 :-ms-input-placeholder {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 :-moz-placeholder {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 @media screen and (min-width: 768px) {
   .site-footer a:hover {
-    color: #ee4c2c;
+    color: #2980b9;
   }
 }
 
 .docs-tutorials-resources a {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 .header-holder {
@@ -11163,19 +11166,19 @@ a:hover {
 }
 
 .header-holder .main-menu ul li.active:after {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 .header-holder .main-menu ul li.active a {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 @media screen and (min-width: 1100px) {
   .header-holder .main-menu ul li a:hover {
-    color: #ee4c2c;
+    color: #2980b9;
   }
 }
 
 .mobile-main-menu.open ul li.active a {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 .version {
@@ -11220,7 +11223,7 @@ a:hover {
   cursor: pointer;
 }
 .pytorch-call-to-action-links a:hover {
-  color: #e44c2c;
+  color: #2980b9;
 }
 .pytorch-call-to-action-links a .call-to-action-desktop-view {
   display: none;
@@ -11252,8 +11255,8 @@ a:hover {
 }
 .pytorch-call-to-action-links a #google-colab-link:hover, .pytorch-call-to-action-links a #download-notebook-link:hover,
 .pytorch-call-to-action-links a #github-view-link:hover {
-  border-bottom-color: #e44c2c;
-  color: #e44c2c;
+  border-bottom-color: #2980b9;
+  color: #2980b9;
 }
 
 #tutorial-cards-container #tutorial-cards {
@@ -11396,7 +11399,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #e44c2c;
+    background-color: #2980b9;
     -webkit-transition: width .250s ease-in-out;
     transition: width .250s ease-in-out;
   }
@@ -11433,7 +11436,7 @@ a:hover {
   color: #979797;
 }
 #tutorial-cards-container .tutorial-filter-menu ul li a:hover {
-  color: #e44c2c;
+  color: #2980b9;
 }
 #tutorial-cards-container .tutorial-filter {
   cursor: pointer;
@@ -11451,12 +11454,12 @@ a:hover {
   margin-bottom: 5px;
 }
 #tutorial-cards-container .filter-btn:hover {
-  border: 1px solid #e44c2c;
-  color: #e44c2c;
+  border: 1px solid #2980b9;
+  color: #2980b9;
 }
 #tutorial-cards-container .filter-btn.selected {
-  background-color: #e44c2c;
-  border: 1px solid #e44c2c;
+  background-color: #2980b9;
+  border: 1px solid #2980b9;
   color: #ffffff;
 }
 #tutorial-cards-container .all-tag-selected {
@@ -11510,7 +11513,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #e44c2c;
+    background-color: #2980b9;
     -webkit-transition: width .250s ease-in-out;
     transition: width .250s ease-in-out;
   }
@@ -11627,6 +11630,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   position: relative;
   overflow-x: hidden;
   overflow-y: hidden;
+  z-index: 0;
 }
 @media screen and (min-width: 1101px) {
   .pytorch-content-right {
@@ -11647,7 +11651,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   .pytorch-side-scroll {
     position: relative;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: visible;
     height: 100%;
   }
 }
@@ -11809,7 +11813,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
 @media screen and (min-width: 1600px) {
   .pytorch-right-menu {
     left: 0;
-    width: 380px;
+    width: 100%;
   }
   .pytorch-right-menu.scrolling-fixed {
     position: fixed;
@@ -11884,7 +11888,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
 }
 .pytorch-left-menu li.toctree-l1.current > a,
 .pytorch-right-menu li.toctree-l1.current > a {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 .pytorch-left-menu li.toctree-l1.current > a:before,
 .pytorch-right-menu li.toctree-l1.current > a:before {
@@ -11894,7 +11898,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   left: -15px;
   top: -10%;
   font-size: 1.375rem;
-  color: #ee4c2c;
+  color: #2980b9;
 }
 @media screen and (min-width: 1101px) {
   .pytorch-left-menu li.toctree-l1.current > a:before,
@@ -11982,14 +11986,14 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   left: -12px;
 }
 .pytorch-right-menu li.active > a {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 .pytorch-right-menu li.active > a span.pre, .pytorch-right-menu li.active > a:before {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 .pytorch-right-menu li.active > a:after {
   content: "\2022";
-  color: #e44c2c;
+  color: #2980b9;
   display: inline-block;
   font-size: 1.375rem;
   left: -17px;
@@ -12024,12 +12028,12 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
 }
 @media screen and (min-width: 1101px) {
   .pytorch-right-menu .pytorch-side-scroll {
-    width: 120%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
   .pytorch-right-menu .pytorch-side-scroll {
-    width: 400px;
+    width: 100%;
   }
 }
 .pytorch-right-menu .pytorch-side-scroll > ul {
@@ -12051,7 +12055,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
 }
 
 #pytorch-right-menu .side-scroll-highlight {
-  color: #ee4c2c;
+  color: #2980b9;
 }
 
 .header-container {
@@ -12248,7 +12252,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   border-bottom-color: transparent;
 }
 .main-menu ul li .dropdown-menu .dropdown-item:hover {
-  background-color: #e44c2c;
+  background-color: #2980b9;
 }
 .main-menu ul li .dropdown-menu .dropdown-item p {
   font-size: 1rem;
@@ -12298,10 +12302,10 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   border-bottom: 1px solid #e2e2e2;
 }
 
-.resources-dropdown .with-down-orange-arrow {
+.resources-dropdown .with-down-blue-arrow {
   padding-right: 2rem;
   position: relative;
-  background: url("../images/chevron-down-orange.svg");
+  background: url("../images/chevron-down-blue.svg");
   background-size: 14px 18px;
   background-position: top 7px right 10px;
   background-repeat: no-repeat;
@@ -12316,7 +12320,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   background-repeat: no-repeat;
 }
 .with-down-arrow:hover {
-  background-image: url("../images/chevron-down-orange.svg");
+  background-image: url("../images/chevron-down-blue.svg");
   background-repeat: no-repeat;
 }
 
@@ -12341,7 +12345,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   border-bottom-color: transparent;
 }
 .header-holder .main-menu ul li a.nav-dropdown-item:hover {
-  background-color: #e44c2c;
+  background-color: #2980b9;
   color: white;
 }
 .header-holder .main-menu ul li a.nav-dropdown-item .dropdown-title {
@@ -12352,7 +12356,7 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
 }
 
 .header-holder .main-menu ul li a.nav-dropdown-item:hover .dropdown-title {
-  background-color: #e44c2c;
+  background-color: #2980b9;
   color: white;
 }
 
