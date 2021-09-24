@@ -12173,69 +12173,6 @@ article.pytorch-article .tutorials-callout-container .btn.callout-button a {
   }
 }
 
-.cookie-banner-wrapper {
-  display: none;
-}
-.cookie-banner-wrapper .container {
-  padding-left: 1.875rem;
-  padding-right: 1.875rem;
-  max-width: 1240px;
-}
-.cookie-banner-wrapper.is-visible {
-  display: block;
-  position: fixed;
-  bottom: 0;
-  background-color: #f3f4f7;
-  min-height: 100px;
-  width: 100%;
-  z-index: 401;
-  border-top: 3px solid #ededee;
-}
-.cookie-banner-wrapper .gdpr-notice {
-  color: #6c6c6d;
-  margin-top: 1.5625rem;
-  text-align: left;
-  max-width: 1440px;
-}
-@media screen and (min-width: 768px) {
-  .cookie-banner-wrapper .gdpr-notice {
-    width: 77%;
-  }
-}
-@media (min-width: 768px) and (max-width: 1239px) {
-  .cookie-banner-wrapper .gdpr-notice {
-    width: inherit;
-  }
-}
-.cookie-banner-wrapper .gdpr-notice .cookie-policy-link {
-  color: #343434;
-}
-.cookie-banner-wrapper .close-button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  border: 1px solid #f3f4f7;
-  height: 1.3125rem;
-  position: absolute;
-  bottom: 42px;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-  outline: none;
-}
-@media screen and (min-width: 768px) {
-  .cookie-banner-wrapper .close-button {
-    right: 20%;
-    top: inherit;
-  }
-}
-@media (min-width: 768px) and (max-width: 1239px) {
-  .cookie-banner-wrapper .close-button {
-    right: 0;
-    top: 0;
-  }
-}
 
 .main-menu ul li .resources-dropdown a {
   cursor: pointer;
