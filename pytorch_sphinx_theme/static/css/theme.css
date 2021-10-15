@@ -10250,7 +10250,7 @@ article.pytorch-article blockquote {
   width: 65%;
 }
 article.pytorch-article img {
-  width: 100%;
+  max-width: 100%;
 }
 
 html {
