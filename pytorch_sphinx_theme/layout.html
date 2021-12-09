@@ -9,10 +9,12 @@
 {%- set lang_attr = 'en' if language == None else (language | replace('_', '-')) %}
 {% import 'theme_variables.jinja' as theme_variables %}
 
-{%- if not theme_menu_lang or theme_menu_lang not in theme_variables.lang_menu_mapping %}
+{%- if theme_menu_lang %}
+{%- if theme_menu_lang not in theme_variables.lang_menu_mapping %}
 {%- set shared_menu = theme_variables.lang_menu_mapping['default'] %}
 {%- else %}
 {%- set shared_menu = theme_variables.lang_menu_mapping[theme_menu_lang] %}
+{%- endif %}
 {%- endif %}
 
 <!DOCTYPE html>
