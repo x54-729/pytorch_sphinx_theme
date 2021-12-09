@@ -9,6 +9,14 @@
 {%- set lang_attr = 'en' if language == None else (language | replace('_', '-')) %}
 {% import 'theme_variables.jinja' as theme_variables %}
 
+{%- if theme_menu_lang %}
+{%- if theme_menu_lang not in theme_variables.lang_menu_mapping %}
+{%- set shared_menu = theme_variables.lang_menu_mapping['default'] %}
+{%- else %}
+{%- set shared_menu = theme_variables.lang_menu_mapping[theme_menu_lang] %}
+{%- endif %}
+{%- endif %}
+
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="{{ lang_attr }}" > <![endif]-->
 <!--[if gt IE 8]><!-->
@@ -111,7 +119,8 @@
 
       <div class="main-menu">
         <ul>
-          {%- for item in theme_menu %}
+          {%- for menu in [theme_menu, shared_menu] %}
+          {%- for item in menu %}
           {%- if item['children'] is defined %}
           <li {% if item['active'] %}class="active docs-active" {% endif %}>
             <div id="resourcesDropdownButton" data-toggle="resources-dropdown" class="resources-dropdown">
@@ -134,6 +143,7 @@
             <a href="{{ item['url'] }}" target="_blank">{{ item['name'] }}</a>
           </li>
           {%- endif %}
+          {%- endfor %}
           {%- endfor %}
         </ul>
       </div>
