@@ -19,7 +19,8 @@ setup(
         '*.html',
         'static/css/*.css',
         'static/js/*.js',
-        'static/fonts/*.*',
+        'static/js/*/*.js',
+        'static/fonts/*/*.*',
         'static/images/*.*',
         'theme_variables.jinja'
     ]},
