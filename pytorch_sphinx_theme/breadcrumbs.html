@@ -42,13 +42,28 @@
     {% block breadcrumbs_aside %}
       <li class="pytorch-breadcrumbs-aside">
         {% if hasdoc(pagename) %}
-            {% if language == "en" %}
-              <a href="/zh_CN/{{ github_version }}/{{ pagename }}{{ file_suffix }}" class="fa fa-language"> {{ _('Switch to Chinese') }}</a>
+            {% if github_version in ["main", "master"] %}
+            {% set branch_name = "latest" %}
             {% else %}
-              <a href="/en/{{ github_version }}/{{ pagename }}{{ file_suffix }}" class="fa fa-language"> {{ _('Switch to English') }}</a>
+            {% set branch_name = github_version %}
+            {% endif %}
+            {% if language == "en" %}
+              <a href="/zh_CN/{{ branch_name }}/{{ pagename }}{{ file_suffix }}" class="fa fa-language"> {{ _('以中文阅读') }}</a>
+            {% else %}
+              <a href="/en/{{ branch_name }}/{{ pagename }}{{ file_suffix }}" class="fa fa-language"> {{ _('Read in English') }}</a>
             {% endif %}
         {% endif %}
       </li>
+      {% if hasdoc(pagename) and display_github %}
+      <li class="pytorch-breadcrumbs-aside">
+        {% if check_meta and 'github_url' in meta %}
+          <!-- User defined GitHub URL -->
+          <a href="{{ meta['github_url'] }}" class="fa fa-github"> {{ _('Edit on GitHub') }}</a>
+        {% else %}
+          <a href="https://{{ github_host|default("github.com") }}/{{ github_user }}/{{ github_repo }}/{{ theme_vcs_pageview_mode|default("blob") }}/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}" class="fa fa-github"> {{ _('Edit on GitHub') }}</a>
+        {% endif %}
+      </li>
+      {% endif %}
     {% endblock %}
   </ul>
 

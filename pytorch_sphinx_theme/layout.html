@@ -232,6 +232,12 @@
             <div role="main" class="main-content" itemscope="itemscope" itemtype="http://schema.org/Article">
               {%- block document %}
               <article itemprop="articleBody" id="pytorch-article" class="pytorch-article">
+                {% if theme_header_note is defined and 'content' in theme_header_note %}
+                <div class="admonition note">
+                  <p class="admonition-title">{{ theme_header_note['title'] if 'title' in theme_header_note else _('Note') }}</p>
+                  <p>{{ theme_header_note['content'] }}</p>
+                </div>
+                {% endif %}
                 {% block body %}{% endblock %}
               </article>
               {% if self.comments()|trim %}

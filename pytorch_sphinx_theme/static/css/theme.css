@@ -11115,9 +11115,8 @@ article.pytorch-article .math img {
   }
 }
 .pytorch-breadcrumbs-wrapper .pytorch-breadcrumbs-aside {
+  padding-left: 20px;
   float: right;
-}
-.pytorch-breadcrumbs-wrapper .pytorch-breadcrumbs-aside .fa.fa-github {
   margin-top: 5px;
   display: block;
 }
