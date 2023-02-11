@@ -1,10 +1,10 @@
 # Introduction
-This theme is adapted from PyTorch Sphinx Theme, with more configurations allowed.
+This theme is adapted from openmmlab PyTorch Sphinx Theme, with more configurations allowed.
 
 ## Getting Started
 Add dependencies to `requirements.txt`,
 ```
--e git+https://github.com/open-mmlab/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
+-e git+https://github.com/x54-729/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
 sphinx_copybutton
 ```
 In `docs/conf.py`:

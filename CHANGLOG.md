@@ -1,0 +1,15 @@
+- 2023.02.11:
+    - 添加 `pytorch-sphinx-theme/fonts/fontawesome-websont.*`
+        - 多版本文档的模块需要展示符号 `fa-book` 等，需要使用 `fontawesome` 字体
+    - 添加 `pytorch-sphinx-theme/images/fnlp-title.png`
+    - 更改 `pytorch-sphinx-theme/breadcrumbs.html`
+        - 注释掉了关于语言切换的部分
+    - 更改 `pytorch-sphinx-theme/layout.htmk`
+        - 更改网页标签栏的图片为 `fnlp-title.png`
+    - 更改 `pytorch-sphinx-theme/versions`
+        - 使用另一种多版本模板
+    - 更改 `pytorch-sphinx-theme/theme_variables.jinja`
+        - 删除所有上方下拉菜单的选项
+    - 更改 `README.md`
+        - 更改了安装的链接
+    - 添加 `CHANGELOG.md`

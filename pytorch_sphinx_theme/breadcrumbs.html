@@ -47,11 +47,11 @@
             {% else %}
             {% set branch_name = github_version %}
             {% endif %}
-            {% if language == "en" %}
+            <!-- {% if language == "en" %}
               <a href="/zh_CN/{{ branch_name }}/{{ pagename }}{{ file_suffix }}" class="fa fa-language"> {{ _('以中文阅读') }}</a>
             {% else %}
               <a href="/en/{{ branch_name }}/{{ pagename }}{{ file_suffix }}" class="fa fa-language"> {{ _('Read in English') }}</a>
-            {% endif %}
+            {% endif %} -->
         {% endif %}
       </li>
       {% if hasdoc(pagename) and display_github %}
