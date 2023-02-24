@@ -13,3 +13,6 @@
     - 更改 `README.md`
         - 更改了安装的链接
     - 添加 `CHANGELOG.md`
+- 2023.02.24
+    - 更改 `README.md`
+        - 重写 `README.md`
