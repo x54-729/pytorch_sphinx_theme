@@ -4,7 +4,7 @@
     - 添加 `pytorch-sphinx-theme/images/fnlp-title.png`
     - 更改 `pytorch-sphinx-theme/breadcrumbs.html`
         - 注释掉了关于语言切换的部分
-    - 更改 `pytorch-sphinx-theme/layout.htmk`
+    - 更改 `pytorch-sphinx-theme/layout.html`
         - 更改网页标签栏的图片为 `fnlp-title.png`
     - 更改 `pytorch-sphinx-theme/versions`
         - 使用另一种多版本模板
@@ -16,3 +16,6 @@
 - 2023.02.24
     - 更改 `README.md`
         - 重写 `README.md`
+- 2023.06.23
+    - 更改 `pytorch-sphinx-theme/layout.html`
+        - 更改网页标签栏的图片为 `title.png`，更加有普适性。
